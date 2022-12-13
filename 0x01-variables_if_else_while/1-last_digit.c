@@ -1,13 +1,11 @@
-#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include <stdio.h>
 
 /**
- * main - finds the last int in a random number
- *
- * Description: The numbers are generated automatically
- * Return: Always(0) Success
- */
+ * main - print the last digit of the number stored in the variable n.
+ * Return: 0
+**/
 
 int main(void)
 {
@@ -15,19 +13,23 @@ int main(void)
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
+
 	last_digit = n % 10;
-	printf("Last digit of %d is %d and is ", n, last_digit);
+
+	printf("Last digit of %d is %d", n, last_digit);
+
 	if (last_digit > 5)
 	{
-		printf("grater than 5\n");
+		puts(" and is greater than 5");
 	}
-	else if (last_digit  == 0)
+	else if (last_digit == 0)
 	{
-		printf("0\n");
+		puts(" and is 0");
 	}
-	else if (last_digit < 6 && last_digit != 0)
+	else
 	{
-		printf("less than 6 and not 0\n");
+		puts(" and is less than 6 and not 0");
 	}
+
 	return (0);
 }
