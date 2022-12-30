@@ -1,18 +1,23 @@
 #include "main.h"
-#include <stdio.h>
-
 /**
- * main - check the code.
+ * _isupper -> prints the upper alphabets
+ * @c: is a parameter
  *
- * Return: Always 0.
+ * Return: Always success
  */
-int main(void)
+int _isupper(int c)
 {
-    char c;
+	char uppercase = 'A';
+	int isupper = 0;
 
-    c = 'A';
-    printf("%c: %d\n", c, _isupper(c));
-    c = 'a';
-    printf("%c: %d\n", c, _isupper(c));
-    return (0);
+	for (; uppercase <= 'Z'; uppercase++)
+	{
+		if (c == uppercase)
+		{
+			isupper = 1;
+			break;
+		}
+	}
+
+	return (isupper);
 }
