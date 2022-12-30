@@ -1,21 +1,17 @@
 #include "main.h"
-
 /**
- * print_alphabet - check the code for ALX School students.
+ * print_alphabet -> prints alphabet in 10 times
  *
- * Return: Always 0.
+ * Return: Always 0 (success)
+ *
  */
-
 void print_alphabet(void)
 {
-	char alp = 'a';
+	int alpha;
 
-	while (alp <= 'z')
+	for (alpha = 'a'; alpha <= 'z'; alpha++)
 	{
-		_putchar (alp);
-		alp++;
-
+		_putchar(alpha);
 	}
-	_putchar ('\n');
-
+	_putchar('\n');
 }

@@ -1,1 +1,1 @@
-my c functions and loops
+This folder is about nested loops project
