@@ -1,15 +1,18 @@
-include "main.h"
+#include "main.h"
+
 /**
- * swap_int -> changes or swaps the values of two integers
- * @a: an integer
- * @b: an integer
- * Return: Nothing
+ * swap_int - swaps two integers
+ *
+ * @a: first parameter
+ * @b: second parameter
+ *
+ * Return: void
  */
 void swap_int(int *a, int *b)
 {
-	int chg;
+	int temp;
 
-	chg = *a;
+	temp = *a;
 	*a = *b;
-	*b = chg;
+	*b = temp;
 }
