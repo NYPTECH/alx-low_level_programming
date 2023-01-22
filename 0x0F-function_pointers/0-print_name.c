@@ -1,24 +1,3 @@
-
-Sign up
-
-mubareksd
-/
-alx-low_level_programming
-Public
-Code
-Issues
-Pull requests
-Actions
-Projects
-Wiki
-Security
-Insights
- main 
-alx-low_level_programming/0x0F-function_pointers/0-print_name.c
-
-mubareksd past task
- 1 contributor
-20 lines (18 sloc)  265 Bytes
 #include <stdio.h>
 #include "function_pointers.h"
 
